@@ -1,4 +1,4 @@
-# RestroQuest 🍽️
+# RestraQuest 🍽️
 
 RestraQuest is a web-based platform designed to help users discover, order food from various restaurants, make payments, rate and review their experiences, and manage their accounts with secure sign-in and sign-out functionality. This project leverages modern web technologies to provide a seamless and user-friendly experience.
 
