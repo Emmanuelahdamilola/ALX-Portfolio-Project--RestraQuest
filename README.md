@@ -34,3 +34,49 @@ RestroQuest is a web-based platform designed to help users discover, order food 
    ```bash
    git clone https://github.com/emmanuelahdamilola/restroquest.git
    cd restroquest
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+## Usage 📲
+1. **Sign Up/Sign In**:
+   - Create an account or log in using Clerk’s authentication system. 🔑
+2. **Browse Restaurants**:
+   - Explore different restaurants based on menu categories. 🍽️
+3. **Order Food**:
+   - Select dishes from a restaurant’s menu and place an order. 🥡
+4. **Make Payment**:
+   - Complete your order by making a secure payment through PayPal. 💳
+5. **Rate and Review**:
+   - After enjoying your meal, rate and review the restaurant and the dishes. ⭐
+6. **Sign Out**:
+   - Securely sign out of your account when finished. 🔒
+
+## Development 🛠️
+### Building for Production
+To build the project for production, run:
+```bash
+npm run build
+```
+
+## Contributing 🤝
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. **Make your changes**.
+4. **Commit your changes**:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+5. **Push to the branch**:
+   ```bash
+   git push origin feature-branch
+   ```
+6. **Open a pull request**.
+
+Feel free to adjust the repository URL, environment variable names, and contact details as necessary.
+```
