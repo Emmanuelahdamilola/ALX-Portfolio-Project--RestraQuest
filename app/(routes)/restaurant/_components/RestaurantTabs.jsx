@@ -16,8 +16,6 @@ function RestaurantTabs({ restaurant }) {
                 <TabsTrigger value="review">Reviews</TabsTrigger>
 
             </TabsList>
-            {/* Content for the About section (not currently used) */}
-            <TabsContent value="about"><AboutRest /></TabsContent>
 
             {/* Content for the Menu section */}
             <TabsContent value="category"><MenuSection restaurant={restaurant} /></TabsContent>
