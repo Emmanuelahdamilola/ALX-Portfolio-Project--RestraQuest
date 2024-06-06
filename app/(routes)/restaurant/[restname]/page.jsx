@@ -1,32 +1,45 @@
+// 'use client': Indicates that this component is used on the client-side.
 'use client'
-import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
-import RestaurantHeader from '../_components/RestaurantHeader';
-import GlobalApi from '@/app/_utils/GlobalApi';
-import RestaurantTabs from '../_components/RestaurantTabs';
+
+// Imports:
+import { usePathname } from 'next/navigation'; 
+import React, { useEffect, useState } from 'react'; 
+import RestaurantHeader from '../_components/RestaurantHeader'; 
+import GlobalApi from '@/app/_utils/GlobalApi'; 
+import RestaurantTabs from '../_components/RestaurantTabs'; 
 
 function RestaurantDetail() {
+    // State variable to store the current pathname
     const param = usePathname();
+    // State variable to store the restaurant details
     const [restaurant, setRestaurant] = useState([]);
+
+    // Effect to fetch restaurant details when the component mounts
     useEffect(() => {
-        GetRestaurantDetail(param.split('/')[2])
-    }, [])
+        GetRestaurantDetail(param.split('/')[2]);
+    }, []);
+
+    // Function to fetch restaurant details
     const GetRestaurantDetail = async (restraSlug) => {
         try {
-            const resp = await GlobalApi.GetBusinessDetail(restraSlug);
+            // Making an API request to fetch restaurant details
+            const resp = await GlobalApi.GetBusinessDetail(restraSlug); 
             console.log(resp);
-            setRestaurant(resp?.restaurant || []);
+            // Updating the restaurant state with the fetched details
+            setRestaurant(resp?.restaurant || []); 
         } catch (error) {
-            console.error('Error fetching restaurant:', error);
+            console.error('Error fetching restaurant:', error); 
         }
     };
-
     return (
         <div className='px-5 md:px-10 bg-green-50'>
-            <RestaurantHeader restaurant={restaurant}/>
-            <RestaurantTabs restaurant={restaurant} />
+             {/* Passing the restaurant details as props to the RestaurantHeader component */}
+            <RestaurantHeader restaurant={restaurant}/> 
+
+           {/* Passing the restaurant details as props to the RestaurantTabs component */}
+            <RestaurantTabs restaurant={restaurant} /> 
         </div>
     )
 }
 
-export default RestaurantDetail
+export default RestaurantDetail;
