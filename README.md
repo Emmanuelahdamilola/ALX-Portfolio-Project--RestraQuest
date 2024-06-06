@@ -1,6 +1,6 @@
 # RestroQuest 🍽️
 
-RestroQuest is a web-based platform designed to help users discover, order food from various restaurants, make payments, rate and review their experiences, and manage their accounts with secure sign-in and sign-out functionality. This project leverages modern web technologies to provide a seamless and user-friendly experience.
+RestraQuest is a web-based platform designed to help users discover, order food from various restaurants, make payments, rate and review their experiences, and manage their accounts with secure sign-in and sign-out functionality. This project leverages modern web technologies to provide a seamless and user-friendly experience.
 
 ## Features ✨
 - **Restaurant Discovery**: Find restaurants based on different menu categories. 🍴
@@ -32,8 +32,8 @@ RestroQuest is a web-based platform designed to help users discover, order food 
 ## Installation 🔧
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/emmanuelahdamilola/restroquest.git
-   cd restroquest
+   git clone https://github.com/Emmanuelahdamilola/ALX-Specialization---Portfolio-Project.git
+   cd RestraQuest-online-food-app
 
 2. **Install dependencies**:
    ```bash
