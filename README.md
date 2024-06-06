@@ -88,12 +88,6 @@ RestroQuest is a web-based platform designed to help users discover, order food 
    - Securely sign out of your account when finished. 🔒
 
 ## Development 🛠️
-### Running Tests
-To run tests, use the following command:
-```bash
-npm test
-```
-
 ### Building for Production
 To build the project for production, run:
 ```bash
