@@ -1,4 +1,3 @@
-Here is your README file in markdown format with emojis included:
 
 ```markdown
 # RestroQuest 🍽️
