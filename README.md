@@ -77,6 +77,3 @@ npm run build
    git push origin feature-branch
    ```
 6. **Open a pull request**.
-
-Feel free to adjust the repository URL, environment variable names, and contact details as necessary.
-```
