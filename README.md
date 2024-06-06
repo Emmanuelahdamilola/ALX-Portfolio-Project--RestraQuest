@@ -1,3 +1,5 @@
+Here is your README file in markdown format with emojis included:
+
 ```markdown
 # RestroQuest 🍽️
 
@@ -11,7 +13,6 @@ RestroQuest is a web-based platform designed to help users discover, order food 
 - [Usage](#usage-📲)
 - [Development](#development-🛠️)
 - [Contributing](#contributing-🤝)
-
 
 ## Features ✨
 - **Restaurant Discovery**: Find restaurants based on different menu categories. 🍴
@@ -112,3 +113,4 @@ npm run build
 6. **Open a pull request**.
 
 Feel free to adjust the repository URL, environment variable names, and contact details as necessary.
+```
