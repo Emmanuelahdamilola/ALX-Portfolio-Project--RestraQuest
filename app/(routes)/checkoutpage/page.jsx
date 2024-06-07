@@ -3,7 +3,7 @@
  * Renders billing details and cart summary
  * Handles order creation and payment through PayPal
  */
-
+'use client'
 import { useSearchParams } from 'next/navigation';
 import React, { useContext, useEffect, useState } from 'react';
 import { Input } from "@/components/ui/input";
@@ -99,8 +99,8 @@ function Checkout() {
     };
 
     return (
-        <div className='bg-green-50'>
-            <h2 className='text-2xl my-5 font-bold p-5 text-center'> Checkout</h2>
+        <div className='bg-green-600'>
+            <h2 className='text-2xl my-5 font-bold p-5 text-center text-white'> Checkout</h2>
             <div className='p-5 px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-5 bg-white'>
                 <div className=' md:col-span-2 md:mx-20'>
                     <h2 className='text-2xl font-bold'>Billing Details</h2>
@@ -132,6 +132,7 @@ function Checkout() {
 
                         {/* implement the paypal button for payment */}
                         {total > 5 && <PayPalButtons
+                        
                             disabled={!(username && email && address && zip) || loading}
                             style={{ layout: 'horizontal' }}
                             onApprove={addToOrder}
