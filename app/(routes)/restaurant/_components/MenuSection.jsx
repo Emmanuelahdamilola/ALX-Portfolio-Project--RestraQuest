@@ -10,7 +10,7 @@ import { CartUpdate } from '@/app/_context/CartUpdate';
 function MenuSection({ restaurant }) {
     // Get the logged-in user information
     const { user } = useUser();
-    
+
     // Context for updating the cart
     const { updateCart, setUpdateCart } = useContext(CartUpdate)
 
@@ -78,10 +78,11 @@ function MenuSection({ restaurant }) {
                             <div className='flex flex-col gap-2 '>
                                 <h2 className='font-bold md:text-md text-sm text-green-500'>{item.name}</h2>
                                 <h2 className='text-sm line-clamp-2 text-green-700'>{item.description}</h2>
-                                <div className='flex justify-between items-center pt-2 font-bold'><h2>${item.price}</h2>
-                                    <CirclePlus
+                                <div className='flex justify-between items-center pt-2 font-bold gap-4'>
+                                    <h2>${item.price}</h2>
+                                    <span><CirclePlus
                                         onClick={() => addToCartHandler(item)}
-                                        className=' cursor-pointer text-green-500' /></div>
+                                        className=' cursor-pointer text-green-500' /></span></div>
                             </div>
                         </div>
                     ))}
