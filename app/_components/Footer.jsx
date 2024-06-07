@@ -45,23 +45,6 @@ function Footer() {
       </div>
 
     <div>
-    <ul
-        className="mt-8 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-      >
-        <li>
-          <a className="text-green-200 transition hover:text-green-200/75" href="#"> About </a>
-        </li>
-
-        <li>
-          <a className="text-green-200 transition hover:text-green-200/75" href="#"> Services </a>
-        </li>
-
-        <li>
-          <a className="text-green-200 transition hover:text-green-200/75" href="#"> Projects </a>
-        </li>
-        
-      </ul>
-
       {/* Social media icons */}
     <div>
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
